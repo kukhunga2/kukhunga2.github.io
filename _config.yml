@@ -1,0 +1,3 @@
+name: Vinh Tran
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
