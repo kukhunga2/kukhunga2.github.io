@@ -1,42 +1,133 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Vinh Tran</title>
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-  
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-			<div class="blurb">
-				<h3>Hi there, I'm Vinh Tran!</h3>
-					<p>I'm best known as the horrible programmer from <em>CSE UCSD</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-			</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<div class ="project">
-			<div class ="projec1">
-				Hello 1
-			</div> <!-- /.projec1 -->
-			<div class ="projec1">
-				Hello 2
-			</div> <!-- /.projec1 -->
-			<div class ="projec1">
-				Hello 3
-			</div> <!-- /.projec1 -->
-		</div> <!-- /.project -->
+<!--
+Author: 旋風 Desinger
+Edited by Vinh Tran
+© 2017 BA Script. Vinh Tran all right Copyright.
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tôi yêu bạn</title>
+
+<!-- Font Independence -->
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<!-- Default CSS -->
+<link href="css/default.css" type="text/css" rel="stylesheet">
+
+<!-- Script -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+<!-- Font -->
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+			<audio autoplay="autopaly">
+					<source src="music/motnha.mp3" type="audio/mp3">
+			</audio>  
+        <div id="main">
+<div id="mainDiv">
+	<div id="content">
+	
+		<!-- TEXT [EDIT ONLY] -->
+		<div id="code">
+			<span class="comments">~</span><br />
+			<span class="space"/><span class="comments">*Một điều anh muốn nói,</span><br />
+			<span class="space"/><span class="comments">*Một điều bí mật nha!</span><br />
+			<span class="space"/><span class="comments">~</span><br />
+			Mè    kuteo   = <span class="keyword">Xuân</span> Lu<br />
+			Ck khó tính = <span class="keyword">Vinh</span> Lù<br />
+			<span class="comments">//Làm quen em thật là khó nè. </span><br />
+            Kết bạn fb thì không thèm nói chuyện với anh <br />
+            <span class="comments">//Phải huỷ kết bạn, ai ngờ em kết bạn lái hí hí. </span><br />
+			Và khi về VN, anh cũng không dám rủ rể em đi chơi nhiều được<br />
+            <span class="comments">//Vì chị em hơi khó tính xíu hỉ. Hehe. Đừng nói chị 3 biết nha. </span><br />
+            Ai ngờ em dành rất nhiều thơi gian cho anh nè. Và .....<br />
+			<span class="comments">// Anh đã yêu em từ lúc nào không biết.</span><br />
+			Từ đó anh luôn nghĩ về em, luôn muốn bên cạnh em<br />
+			Anh thương em thật nhiều, nhiều lắm luôn em à<br />
+            Cho dù chúng ta xa thật là xa, nhưng em hy sinh tất cả vì anh<br />
+			Anh muốn nói với em là: .......<br />
+			<span class="keyword">Anh</span> rất <span class="keyword">hạnh phúc</span><br />
+            <span class="keyword">Vì .....</span><br />
+			<span class="keyword">Em</span> ... <span class="keyword"> luôn đồng hành cùng anh</span>;<br />
+			<span class="placeholder"/><span class="comments">// Ngay bây giờ, lúc này....</span><br />
+			<span class="placeholder"/><span class="comments">// Có thể ở trong tương lai.</span><br />
+			<span class="placeholder"/>Anh muốn em hạnh phúc và thuộc về anh<br />
+			
+			<br>
+			<br>
+			<span class="keyword">Xuân Lu</span>, Anh yêu em - thương em<br />			
+		</div>
+		<!-- END TEXT -->
 		
-		<footer>
-    		<ul>
-        		<li><a href="mailto:kukhunga2@gmail.com">email</a></li>
-        		<li><a href="https://github.com/kukhunga2">github.com/kukhunga2</a></li>
-			</ul>
-		</footer>
-	</body>
+		<!-- MESSAGES HEART -->
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					Xuân Lu, đây là thời gian anh yêu em... ~
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					          Trái tim của em thuộc về anh.<br/>
+					<div class="signature">- Vinh Lù<div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Copyright/Watermark -->
+<div style="text-align:center;margin:0px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>© 2017 Vinh Tran.</b></p>
+</div>
+
+<!-- [!] CHANGE TIME HERRE [!] -->
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2016, 9, 11); // <--- Edit Time Here 
+together.setHours(11);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+<!-- [!] CHANGE TIME HERRE [!] -->
+
+</body>
 </html>
